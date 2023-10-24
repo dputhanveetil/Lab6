@@ -1,4 +1,4 @@
-# this is my first github addition
+# divya puthanveetil
 
 def encode(password):
     pass_list = list(password)
