@@ -3,6 +3,7 @@
 # added by Paul Chojecki
 from decode import *
 
+
 def encode(password):
     pass_list = list(password)
     encoded = []
@@ -15,27 +16,25 @@ def encode(password):
     return int(encoded_str)
 
 
-def decode():
-    pass
-
-
 if __name__ == "__main__":
     menu = "Menu\n-------------\n1. Encode\n2. Decode\n3. Quit"
 
     while True:
         print(menu)
-        print("\nPlease enter an option: ")
+        print("\nPlease enter an option: ", end='')
         choice = int(input())
 
         if choice == 1:
-            print("Print please enter your password to encode: ")
+            print("Print please enter your password to encode: ", end='')
             ogpassword = input()
             print("Your password has been stored!")
+            print()
             encoded = encode(ogpassword)
 
         elif choice == 2:
             decoded = decode(encoded)
             print(f"The encoded password is {encoded}, and the original password is {decoded} ")
+            print()
 
         elif choice == 3:
             break
