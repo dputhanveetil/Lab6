@@ -1,5 +1,8 @@
 # divya puthanveetil
 
+# added by Paul Chojecki
+from decode import *
+
 def encode(password):
     pass_list = list(password)
     encoded = []
