@@ -5,9 +5,11 @@ def encode(password):
     encoded = []
 
     for item in pass_list:
-        encoded.append(int(item) + 3)
+        encoded.append(str(int(item) + 3))
 
-    return encoded
+    encoded_str = ''.join(encoded)
+
+    return int(encoded_str)
 
 
 def decode():
