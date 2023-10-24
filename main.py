@@ -9,7 +9,7 @@ def encode(password):
     encoded = []
 
     for item in pass_list:
-        encoded.append(str(int(item) + 3))
+        encoded.append(str((int(item) + 3) % 10))
 
     encoded_str = ''.join(encoded)
 
